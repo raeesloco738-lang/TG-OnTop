@@ -4,83 +4,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="vuQhLB6-oMVLuj2qFj3hSQqF3sa8qpsBFezShI1voKY">
-<meta name="description" content="وب‌سایت رسمی کلن قدیمی و ریشه‌دار TG OnTop کالاف دیوتی موبایل">
-<title>TG OnTop | Official Website</title>
+<meta name="theme-color" content="#080808">
+<meta name="description" content="وب سایت رسمی کلن TG OnTop کالاف دیوتی موبایل">
+<title>TG OnTop | Official Clan</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-background:#090909;
-color:#fff;
+background:#080808;
+color:#eee;
 font-family:Tahoma,Arial,sans-serif;
 line-height:2;
 }
+
+:root{
+--gold:#d6ad45;
+--dark:#101010;
+--light:#f0ce79;
+}
+
 header{
-background:#111;
-padding:20px;
+background:#090909;
+border-bottom:1px solid #8d6a26;
+padding:18px;
 text-align:center;
-border-bottom:2px solid #c49a35;
 }
+
 .logo{
-color:#e5b84b;
-font-size:32px;
-font-weight:bold;
-letter-spacing:2px;
+font-size:34px;
+font-weight:900;
+color:var(--gold);
+letter-spacing:4px;
 }
-header p{color:#aaa;font-size:13px}
+
+.subtitle{
+color:#888;
+font-size:11px;
+letter-spacing:3px;
+}
+
 nav{
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-gap:22px;
-padding:14px;
-background:#151515;
+gap:25px;
+padding:14px 8px;
+background:#111;
+position:sticky;
+top:0;
+z-index:10;
+border-bottom:1px solid #282018;
 }
-nav a{color:#e5b84b;text-decoration:none}
+
+nav a{
+text-decoration:none;
+color:#d8b75e;
+font-size:13px;
+}
+
+nav a:hover{
+color:white;
+}
+
 .hero{
-text-align:center;
+min-height:570px;
 padding:75px 20px;
-background:linear-gradient(180deg,#17130a,#090909);
+text-align:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+background:
+radial-gradient(ellipse at center,#30220b 0%,#120f09 40%,#080808 75%);
 }
-.hero h1{font-size:34px;color:#e5b84b}
-.hero p{color:#ccc;margin:15px auto;max-width:600px}
+
+.eagle{
+width:125px;
+height:125px;
+border:2px solid var(--gold);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:72px;
+margin-bottom:25px;
+box-shadow:0 0 35px #9b762b44;
+}
+
+.hero h1{
+color:var(--gold);
+font-size:37px;
+line-height:1.5;
+}
+
+.hero h2{
+color:#fff;
+font-size:20px;
+margin:10px 0;
+}
+
+.hero p{
+max-width:550px;
+color:#bbb;
+margin-top:15px;
+}
+
 .btn{
 display:inline-block;
-background:#c49a35;
-color:#090909;
-padding:12px 30px;
-border-radius:8px;
+background:linear-gradient(135deg,#f0cf79,#b88a2c);
+color:#080808;
+padding:13px 32px;
+border-radius:7px;
 text-decoration:none;
 font-weight:bold;
-margin-top:20px;
+margin-top:25px;
+transition:.3s;
 }
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 5px 20px #c49a3544;
+}
+
 section{
-padding:45px 20px;
-max-width:850px;
+max-width:950px;
 margin:auto;
+padding:65px 20px;
 }
-h2{
-color:#e5b84b;
-margin-bottom:20px;
-border-bottom:1px solid #55421b;
-padding-bottom:10px;
+
+.section-title{
+text-align:center;
+color:var(--gold);
+font-size:25px;
+margin-bottom:30px;
 }
+
+.section-title:after{
+content:"";
+display:block;
+width:65px;
+height:2px;
+background:var(--gold);
+margin:10px auto;
+}
+
 .card{
-background:#151515;
-border:1px solid #393021;
+background:linear-gradient(145deg,#181818,#101010);
+border:1px solid #40331d;
 border-radius:12px;
-padding:22px;
+padding:25px;
 margin:15px 0;
 }
-li{margin:8px 25px;color:#ddd}
-.highlight{color:#e5b84b}
+
+.card h3{
+color:var(--gold);
+margin-bottom:10px;
+font-size:18px;
+}
+
+.card p{
+color:#bbb;
+font-size:14px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.feature{
+text-align:center;
+padding:25px 15px;
+background:#121212;
+border:1px solid #332a1a;
+border-radius:12px;
+}
+
+.feature .symbol{
+font-size:35px;
+color:var(--gold);
+}
+
+.feature h3{
+color:var(--gold);
+font-size:16px;
+margin:10px 0;
+}
+
+ul{
+padding-right:22px;
+}
+
+li{
+color:#ccc;
+margin:10px 0;
+font-size:14px;
+}
+
+.join-box{
+text-align:center;
+border:1px solid var(--gold);
+background:linear-gradient(145deg,#201a0d,#101010);
+padding:35px 20px;
+border-radius:15px;
+}
+
+.join-box h3{
+color:var(--gold);
+font-size:23px;
+}
+
+.join-box p{
+color:#bbb;
+margin-top:12px;
+}
+
 footer{
 text-align:center;
-padding:25px;
 background:#111;
-color:#888;
-border-top:1px solid #c49a35;
+padding:30px 15px;
+border-top:1px solid #6d5221;
+}
+
+footer h2{
+color:var(--gold);
+font-size:24px;
+}
+
+footer p{
+color:#777;
+font-size:12px;
+}
+
+@media(max-width:500px){
+.hero h1{font-size:29px}
+.logo{font-size:29px}
+nav{gap:15px}
+section{padding:45px 17px}
 }
 </style>
 </head>
@@ -89,70 +256,123 @@ border-top:1px solid #c49a35;
 
 <header>
 <div class="logo">ƬƓ ONTOP</div>
-<p>OFFICIAL CALL OF DUTY MOBILE CLAN</p>
+<div class="subtitle">OFFICIAL CALL OF DUTY MOBILE CLAN</div>
 </header>
 
 <nav>
 <a href="#home">صفحه اصلی</a>
-<a href="#about">درباره ما</a>
+<a href="#about">درباره TG</a>
+<a href="#features">ویژگی‌ها</a>
 <a href="#rules">قوانین</a>
-<a href="#join">عضویت</a>
+<a href="#join">تست کلن</a>
 </nav>
 
 <div class="hero" id="home">
-<h1>WELCOME TO TG FAMILY</h1>
+
+<div class="eagle">🦅</div>
+
+<h1>WELCOME TO TG</h1>
+<h2>THE ONTOP FAMILY</h2>
+
 <p>
-کلن قدیمی و ریشه‌دار ƬƓ با هدف تشکیل یک تیم حرفه‌ای،
-منظم و قدرتمند شروع به عضوگیری محدود می‌کند.
+کلن قدیمی و ریشه‌دار ƬƓ با هدف ساخت
+یک خانواده حرفه‌ای، منظم و قدرتمند
+عضوگیری محدود خود را آغاز می‌کند.
 </p>
-<a class="btn" href="#join">درخواست عضویت</a>
+
+<a href="#join" class="btn">درخواست تست و عضویت</a>
+
 </div>
 
 <section id="about">
-<h2>درباره کلن TG</h2>
+<h2 class="section-title">درباره کلن TG</h2>
+
 <div class="card">
+<h3>ƬƓ ONTOP FAMILY</h3>
 <p>
-ما در TG به دنبال بازیکنان واقعی، بااستعداد و متعهد هستیم.
-هدف ما ساخت یک خانواده قدرتمند و ماندگار در کالاف دیوتی موبایل است.
+ما در TG به دنبال بازیکنانی هستیم که علاوه بر مهارت،
+دارای تفکر تیمی، نظم، احترام و تعهد باشند.
+<br><br>
+هدف ما فقط جمع کردن بازیکن نیست؛
+هدف ساخت یک تیم واقعی و ماندگار است.
 </p>
-<p class="highlight">TG FAMILY | ESTABLISHED & STRONG</p>
+</div>
+</section>
+
+<section id="features">
+<h2 class="section-title">ویژگی‌های خانواده TG</h2>
+
+<div class="features">
+
+<div class="feature">
+<div class="symbol">🦅</div>
+<h3>تیم حرفه‌ای</h3>
+<p>تمرکز روی مهارت و بازی هوشمندانه</p>
+</div>
+
+<div class="feature">
+<div class="symbol">⚔️</div>
+<h3>کلن‌وار</h3>
+<p>اهمیت به حضور و همکاری تیمی</p>
+</div>
+
+<div class="feature">
+<div class="symbol">👑</div>
+<h3>احترام و نظم</h3>
+<p>احترام متقابل بین تمام اعضا</p>
+</div>
+
 </div>
 </section>
 
 <section id="rules">
-<h2>شرایط و قوانین عضویت</h2>
+<h2 class="section-title">شرایط عضویت</h2>
+
 <div class="card">
+<h3>قوانین ورود به TG</h3>
+
 <ul>
-<li>حداقل سن ۱۵ سال، مگر بازیکنان با سطح بسیار بالا.</li>
-<li>داشتن سطح بازی بالا و مهارت کافی.</li>
-<li>داشتن لِجندری در هر سیزن.</li>
+<li>حداقل سن ۱۵ سال، مگر بازیکنان با سطح بالا.</li>
+<li>داشتن مهارت و سطح بازی مناسب.</li>
+<li>لجندری در هر سیزن الزامی است.</li>
 <li>توانایی حضور در کلن‌وارها.</li>
-<li>احترام به لیدر و تمام اعضای کلن.</li>
-<li>فعالیت مستمر و تعهد به خانواده TG.</li>
-<li>توانایی بازی تیمی و اجرای استراتژی.</li>
+<li>داشتن تفکر و استراتژی تیمی.</li>
+<li>احترام به لیدر و تمام اعضا.</li>
+<li>فعالیت مستمر و حضور منظم.</li>
 <li>عضویت برای افراد جدی و بلندمدت است.</li>
+<li>بازیکنان بی‌تعهد و کم‌فعالیت پذیرفته نمی‌شوند.</li>
 </ul>
+
 </div>
 </section>
 
 <section id="join">
-<h2>درخواست تست و عضویت</h2>
-<div class="card">
+<h2 class="section-title">JOIN TG FAMILY</h2>
+
+<div class="join-box">
+
+<h3>آماده‌ای به خانواده TG بپیوندی؟</h3>
+
 <p>
-اگر شرایط عضویت در TG را دارید، فرم زیر را تکمیل کنید.
-اطلاعات شما برای بررسی درخواست تست استفاده می‌شود.
+اگر مهارت، انگیزه و شرایط لازم را داری،
+فرم تست را تکمیل کن تا درخواستت بررسی شود.
 </p>
-<a class="btn"
+
+<a
+class="btn"
 href="https://docs.google.com/forms/d/e/1FAIpQLSdMiAP01ppud8Bqu0sFzes1DsRTvRRkIpAPEbXcW_I6xEUh5Q/viewform?usp=header"
-target="_blank">
+target="_blank"
+rel="noopener">
 ورود به فرم تست کلن
 </a>
+
 </div>
 </section>
 
 <footer>
+<h2>ƬƓ ONTOP</h2>
+<p>OLD ROOTS . STRONG FAMILY . ONTOP</p>
 <p>© 2026 TG OnTop | All Rights Reserved</p>
-<p>POWERED BY TG FAMILY</p>
 </footer>
 
 </body>
